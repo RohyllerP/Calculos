@@ -1,0 +1,30 @@
+@use '../modules/_colors' as c
+
+@mixin button($theme: $primary_color, $theme2: blue, $padding)
+    padding: $padding
+    background-color: $theme ,
+    border: 2px solid white,
+    cursor: pointer,
+    border-radius: 8px,
+    transition: 0.3s ease-in ,
+    font-weight: 500
+    font-size:17px
+
+    &:hover
+        background-color: $theme2
+
+    a
+        color: #DDDDDD,
+        font-size: 16px
+        font-weight: 600
+
+.button_one
+    @include button($theme: transparent, $theme2: c.$first_color, $padding: 8px)
+
+.button_two
+    @include button($theme: c.$second_color ,$theme2: c.$second_color, $padding: 8px)
+
+.button_close 
+    @include button($theme: c.$close2_color, $theme2: c.$close2_color, $padding:7px)
+
+

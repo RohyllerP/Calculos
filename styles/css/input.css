@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.box-div-big {
+  padding: 20px;
+  border: 1.5px solid #DDDDDD;
+  background-color: #EAEAEA;
+}
+.box-div-big .box-div-titulo {
+  background-color: #333C83;
+  border: 2px solid #161a3a;
+  color: white;
+  padding: 5px;
+}
+.box-div-big h3 {
+  font-size: 35px;
+  text-align: center;
+}
+.box-div-big p {
+  font-size: 22px;
+  text-align: justify;
+}
+.box-div-big .box-div-informacion {
+  border-bottom: 1px dashed black;
+  padding: 20px 0 10px 0;
+}
+.box-div-big .box-div-otra-informacion {
+  padding: 10px 0 10px 0;
+}
+.box-div-big .box-width {
+  max-width: 200px;
+}
+
+.button_one {
+  padding: 8px;
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+  font-weight: 500;
+  font-size: 17px;
+}
+.button_one:hover {
+  background-color: #Ed7D31;
+}
+.button_one a {
+  color: #DDDDDD;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button_two {
+  padding: 8px;
+  background-color: #1F4287;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+  font-weight: 500;
+  font-size: 17px;
+}
+.button_two:hover {
+  background-color: #1F4287;
+}
+.button_two a {
+  color: #DDDDDD;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button_close {
+  padding: 7px;
+  background-color: #F62B2B;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+  font-weight: 500;
+  font-size: 17px;
+}
+.button_close:hover {
+  background-color: #F62B2B;
+}
+.button_close a {
+  color: #DDDDDD;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box-div-big-2 {
+  width: 600px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #DDDDDD;
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+  width: 13px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #414141;
+}
+
+p {
+  font-family: "Dosis", sans-serif;
+}
+
+.box-div-informacion {
+  display: flex;
+}
+
+.div-navbar {
+  color: #DDDDDD;
+}
+
+.div-navbar-flex {
+  margin-bottom: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.div-navbar-flex .div-navbar-item1 {
+  background-color: #1F4287;
+  width: 190px;
+  height: 35px;
+  text-align: center;
+  margin: 35px 50px 0 0;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  opacity: 1;
+}
+.div-navbar-flex .div-navbar-item1:hover {
+  opacity: 0.6;
+}
+.div-navbar-flex .div-navbar-item {
+  background-color: #Ed7D31;
+  width: 190px;
+  height: 35px;
+  text-align: center;
+  margin: 35px 50px 0 0;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  opacity: 1;
+}
+.div-navbar-flex .div-navbar-item:hover {
+  opacity: 0.6;
+}
+.div-navbar-flex h3 {
+  padding-top: 7px;
+}
+
+.div-footer-big {
+  margin-top: 6em;
+  text-align: center;
+}
+
+.div-footer-icon {
+  display: flex;
+  justify-content: center;
+}
+.div-footer-icon div {
+  padding: 20px 10px 20px 10px;
+  transition: 0.3s ease-in;
+  opacity: 1;
+}
+.div-footer-icon div:hover {
+  opacity: 0.6;
+}
+
+.box-grande {
+  background-color: #181717;
+  color: white;
+}
+
+.home-1 p {
+  font-weight: 500;
+  font-size: 22px;
+  text-align: justify;
+}
+.home-1 .home-principal {
+  padding: 20px;
+  background-color: #Ed7D31;
+  margin-bottom: 30px;
+}
+.home-1 .home-grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 30px;
+}
+.home-1 .home-grid-1 {
+  margin: 0 0 20px 0;
+  padding: 10px;
+  background-color: #767171;
+}
+.home-1 .home-grid-2 {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #Ed7D31;
+}
+.home-1 .home-grid-2 div {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+@keyframes example {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    top: 0px;
+    left: 83%;
+  }
+  50% {
+    top: 130px;
+    left: 83%;
+  }
+  75% {
+    top: 130px;
+    left: 0px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+.home-1 .home-big-button {
+  margin: 20px;
+}
+@media (max-width: 864px) {
+  .home-1 .home-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .home-1 .home-grid-2 div {
+    display: none;
+  }
+}
+
+.div-big-inicio {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.div-inicio-home {
+  padding: 20px;
+}
+
+@media (max-width: 500px) {
+  .div-big-inicio {
+    grid-template-columns: 100%;
+  }
+}
+.div-big-aside {
+  width: 100%;
+  height: 90vh;
+  padding: 20px;
+  color: white;
+  background-color: #181717;
+}
+.div-big-aside .div-aside-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.div-big-aside .div-aside-category {
+  margin-top: 20px;
+}
+.div-big-aside .div-aside-category div h3 {
+  padding-bottom: 30px;
+}
+.div-big-aside .div-aside-category::-webkit-scrollbar {
+  width: 7px;
+  background: black;
+}
+
+.div-big-inicio-navbar {
+  padding: 20px;
+  height: 63px;
+  background-color: #181717;
+  border-bottom: 1px solid #5A5A5A;
+  display: flex;
+  justify-content: space-between;
+}
+.div-big-inicio-navbar .div-inicio-return {
+  transition: 0.3s ease;
+  opacity: 1;
+}
+.div-big-inicio-navbar .div-inicio-return h3 {
+  margin: -33px 0 0 32px;
+}
+.div-big-inicio-navbar .div-inicio-return:hover {
+  opacity: 0.6;
+}
+.div-big-inicio-navbar .div-inicio-operaciones {
+  color: white;
+  margin-left: 40px;
+}
+@media (max-width: 540px) {
+  .div-big-inicio-navbar .div-big-inicio-navbar div h3 {
+    font-size: 15px;
+  }
+  .div-big-inicio-navbar .div-inicio-operaciones {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=input.css.map */

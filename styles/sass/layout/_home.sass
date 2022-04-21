@@ -1,0 +1,75 @@
+@use '../modules/_colors' as c
+@use '../partials/_buttons' as b 
+
+.box-grande 
+    background-color: c.$background3-color
+    color: white
+.home-1
+    p
+        font-weight: 500
+        font-size:22px
+        text-align: justify
+    .home-principal
+        padding: 20px
+        background-color: c.$first_color
+        margin-bottom: 30px
+        
+
+    .home-grid
+        padding: 20px
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+        grid-template-rows: repeat(1,1fr)
+        gap: 30px
+
+    .home-grid-1
+        margin: 0 0 20px 0
+        padding: 10px
+        background-color: c.$thirth_color
+
+    .home-grid-2
+        margin-bottom: 20px
+        padding: 10px
+        background-color: c.$first_color
+        div
+            width: 100px
+            height:100px
+            background-color: blue
+            position: relative
+            animation-name: example
+            animation-duration: 5s
+            animation-timing-function: ease
+            animation-iteration-count: infinite
+            animation-direction: reverse
+            
+
+    @keyframes example 
+        0% 
+            top: 0px 
+            left: 0px
+        25% 
+            top: 0px
+            left: 83%
+        50% 
+            top: 130px
+            left: 83%
+        75%
+            top: 130px
+            left: 0px
+        100%
+            top: 0px
+            left: 0px
+
+    .home-big-button
+        margin: 20px
+        
+
+    // media query
+    $grid-layout: 864px
+    @media (max-width: $grid-layout)
+        .home-grid
+             grid-template-columns: repeat(1,1fr)
+             grid-template-rows: repeat(2,1fr)
+        .home-grid-2
+            div
+                display: none
